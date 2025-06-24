@@ -22,3 +22,6 @@ class Sighting:
 
     def __hash__(self):
         return hash(self.id)
+
+    def str2(self):
+        return f"id:{self.id} - {self.city}  [{self.state}] -  durata:{self.duration}, {self.datetime.strftime("%Y-%m-%d %H:%M:%S")}"
